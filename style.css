@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+
+
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100vw;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+}
+
+.card-home {
+  width: 90%;
+  height: 550px;
+  background-image: url("./assets/img/rain_afternoon.jpg");
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+}
+
+.weather {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  padding: 80px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white;
+}
+
+
+.currentWeather {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.currentTemp {
+  font-size: 6rem;
+  font-weight: 400;
+  margin-bottom: 0 !important;
+  height: 115px;
+}
+
+.currentDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentCity {
+  font-size: 3.5rem;
+  height: 70px;
+}
+
+.details {
+  font-size: 0.9rem;
+}
+
+.currentIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentIcon img {
+  width: 35px;
+}
+
+
+.infos {
+  height: 100%;
+  width: 40%;
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.infos-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 0 !important;
+  border-block: 1.5px solid rgba(255, 255, 255, 0.199);
+}
+
+.infos-details li {
+  list-style: none;
+  color: white;
+}
+
+.infos label {
+  display: flex;
+  width: 100%;
+  color: white;
+  gap: 10px;
+  justify-content: end;
+}
